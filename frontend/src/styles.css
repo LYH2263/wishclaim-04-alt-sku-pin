@@ -35,3 +35,19 @@ button.ghost { background: transparent; color: var(--ink); border: 1px solid var
 input, textarea { width: 100%; padding: 10px; border-radius: 12px; border: 1px solid var(--line); font: inherit; margin: 6px 0 12px; background: #fff; }
 .menu-btn { position: fixed; left: 16px; top: 16px; z-index: 10; }
 .err { color: #a33; }
+.sku-row { display: flex; gap: 8px; align-items: center; }
+.sku-row input { margin: 4px 0; }
+.sku-row .sku-price { width: 110px; flex: none; }
+.sku-row button { flex: none; }
+.sku-opt {
+  display: flex; gap: 8px; align-items: center; padding: 8px 10px;
+  border: 1px solid var(--line); border-radius: 12px; margin: 6px 0;
+  background: #fff; cursor: pointer;
+}
+.sku-opt input { width: auto; margin: 0; }
+.pin { color: var(--rose); font-weight: 600; margin: 6px 0; }
+.pinbox {
+  background: #fff; border: 1px solid var(--rose); border-radius: 14px;
+  padding: 12px 14px; margin: 10px 0;
+}
+.editbox { margin-top: 14px; border-top: 1px dashed var(--line); padding-top: 10px; }
