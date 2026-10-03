@@ -6,6 +6,10 @@
       <article v-for="w in rows" :key="w.id" class="card" @click="$router.push('/wishes/'+w.id)">
         <h3>{{ w.title || '（无标题）' }}</h3>
         <p>{{ w.note }}</p>
+        <p v-if="w.selected_sku" class="pin-line">
+          📌 {{ w.selected_sku.title }}<span v-if="w.selected_sku.estimated_price" class="tag"> · ¥{{ w.selected_sku.estimated_price }}</span>
+        </p>
+        <p v-else class="tag">🧩 {{ w.sku_count }} 条备选待钉选</p>
         <span class="tag">{{ w.status }} · {{ w.data_quality }}</span>
       </article>
     </div>
